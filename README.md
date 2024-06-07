@@ -27,8 +27,8 @@ Es para la creación de la factura.
 
 ## FRONT
 Página WEB
-# Ejecutar desde CMD dentro de la carpeta .\FERREMAX\FRONT el comando
-# code .
-# y ejecutar con live server
+- Ejecutar desde CMD dentro de la carpeta .\FERREMAX\FRONT el comando
+- code .
+- y ejecutar con live server
 
 ----
