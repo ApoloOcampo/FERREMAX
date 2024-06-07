@@ -16,19 +16,20 @@ Existen dos controllers
     categoria : string
     precio : int
     enStock : bool
-# Ejecutar desde CMD dentro de la carpeta .\Ferremax\Ferremax.API el comando
-# dotnet run -d Ferremax.API.csproj
+- Ejecutar desde CMD dentro de la carpeta .\Ferremax\Ferremax.API el comando
+- dotnet run -d Ferremax.API.csproj
 
 
 ## API-Flask
 Es para la creación de la factura.
-# Ejecutar desde CMD dentro de la carpeta .\FERREMAX\API-Flask el comando
-# python apiFactura.py
+- Ejecutar desde CMD dentro de la carpeta .\FERREMAX\API-Flask los comandos
+- pip install -r requirements.txt
+- python apiFactura.py
 
 ## FRONT
 Página WEB
-# Ejecutar desde CMD dentro de la carpeta .\FERREMAX\FRONT el comando
-# code .
-# y ejecutar con live server
+- Ejecutar desde CMD dentro de la carpeta .\FERREMAX\FRONT el comando
+- code .
+- y ejecutar con live server
 
 ----
