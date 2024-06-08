@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\apfir\\Desktop\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Ferremax.API.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Ferremax.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\apfir\\Desktop\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Ferremax.API.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Ferremax.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\apfir\\Desktop\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Ferremax.API.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Ferremax.API.csproj",
         "projectName": "Ferremax.API",
-        "projectPath": "C:\\Users\\apfir\\Desktop\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Ferremax.API.csproj",
-        "packagesPath": "C:\\Users\\apfir\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\apfir\\Desktop\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Ferremax.API.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\apfir\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,12 +22,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -39,24 +33,17 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -68,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\3.1.426\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -15,35 +15,40 @@ namespace Ferremax.API.Controllers
     {
         private static IList<Producto> lista = new List<Producto>();
 
+        // GET: api/<ProductoController>
         [HttpGet]
         public IEnumerable<Producto> Get()
         {
             return lista;
         }
 
+        // GET api/<ProductoController>/5
         [HttpGet("{id}")]
-        public ActionResult<Producto> Get(int id)
+        public Producto Get(int id)
         {
-            var producto = lista.FirstOrDefault(x => x.id == id);
+            return lista.FirstOrDefault(x => x.id == id);
         }
 
+        // POST api/<ProductoController>
         [HttpPost]
-        public ActionResult Post([FromBody] Producto value)
+        public void Post([FromBody] Producto value)
         {
             lista.Add(value);
         }
 
+        // PUT api/<ProductoController>/5
         [HttpPut("{id}")]
-        public ActionResult Put(int id, [FromBody] Producto value)
+        public void Put(int id, [FromBody] Producto value)
         {
-            var producto = lista.FirstOrDefault(x => x.id == id);
-            if (producto == null)
+            Producto selection = lista.FirstOrDefault(x => x.id == id);
+            lista[lista.IndexOf(selection)] = value;
         }
 
+        // DELETE api/<ProductoController>/5
         [HttpDelete("{id}")]
-        public ActionResult Delete(int id)
+        public void Delete(int id)
         {
-            var producto = lista.FirstOrDefault(x => x.id == id);
+            lista.Remove(lista.FirstOrDefault(x => x.id == id));
         }
     }
 }
