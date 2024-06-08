@@ -1,5 +1,3 @@
 is_global = true
 build_property.RootNamespace = Ferremax.API
-build_property.ProjectDir = C:\Users\apfir\Desktop\FERREMAX\API-Csharp\Ferremax\Ferremax.API\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = C:\Users\usuario\OneDrive\Escritorio\Duoc\5 semestre\integracion de plataforma\FERREMAX\API-Csharp\Ferremax\Ferremax.API\
