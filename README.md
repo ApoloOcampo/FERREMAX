@@ -22,7 +22,8 @@ Existen dos controllers
 
 ## API-Flask
 Es para la creación de la factura.
-- Ejecutar desde CMD dentro de la carpeta .\FERREMAX\API-Flask el comando
+- Ejecutar desde CMD dentro de la carpeta .\FERREMAX\API-Flask los comandos
+- pip install -r requirements.txt
 - python apiFactura.py
 
 ## FRONT
