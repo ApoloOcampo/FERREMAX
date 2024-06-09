@@ -9,14 +9,20 @@
   },
   "packageFolders": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\Usuario\\.nuget\\packages\\": {}
 =======
     "C:\\Users\\usuario\\.nuget\\packages\\": {}
+>>>>>>> origin/sergio
+=======
+    "C:\\Users\\apfir\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
 >>>>>>> origin/sergio
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
 <<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Ferremax.API.csproj",
       "projectName": "Ferremax.API",
@@ -28,13 +34,24 @@
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
       "projectUniqueName": "C:\\Users\\usuario\\OneDrive\\Escritorio\\Duoc\\5 semestre\\integracion de plataforma\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Ferremax.API.csproj",
+=======
+      "projectUniqueName": "C:\\Users\\apfir\\Desktop\\FERREMAX\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Ferremax.API.csproj",
+>>>>>>> origin/sergio
       "projectName": "Ferremax.API",
-      "projectPath": "C:\\Users\\usuario\\OneDrive\\Escritorio\\Duoc\\5 semestre\\integracion de plataforma\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Ferremax.API.csproj",
-      "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\usuario\\OneDrive\\Escritorio\\Duoc\\5 semestre\\integracion de plataforma\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\obj\\",
+      "projectPath": "C:\\Users\\apfir\\Desktop\\FERREMAX\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Ferremax.API.csproj",
+      "packagesPath": "C:\\Users\\apfir\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\apfir\\Desktop\\FERREMAX\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> origin/sergio
+=======
+        "C:\\Users\\apfir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
 >>>>>>> origin/sergio
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -44,8 +61,12 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+>>>>>>> origin/sergio
+=======
+        "C:\\Program Files\\dotnet\\library-packs": {},
 >>>>>>> origin/sergio
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -59,6 +80,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -74,24 +100,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.10, 3.1.10]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.1.32, 3.1.32]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[3.1.0, 3.1.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[3.1.0, 3.1.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -101,9 +109,13 @@
           }
         },
 <<<<<<< HEAD
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\3.1.426\\RuntimeIdentifierGraph.json"
 =======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+>>>>>>> origin/sergio
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
 >>>>>>> origin/sergio
       }
     }

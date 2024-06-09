@@ -13,9 +13,15 @@ CORS(app, resources={r"/api/*": {"origins": "*"}})
 facturas_db = {}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 carritos = {}  # Diccionario para almacenar los carritos de compras por cliente
 
 =======
+>>>>>>> origin/sergio
+=======
+url_cliente = "http://localhost:5000/api/cliente"
+url_producto = "http://localhost:5000/api/producto"
+
 >>>>>>> origin/sergio
 class Factura(Resource):
     def get(self, factura_id=None):
@@ -91,10 +97,6 @@ if __name__ == "__main__":
         json = request.get_json()
         id_cliente = json["id_cliente"]
         productos = json["productos"]
-
-        # Suponiendo que tenemos URLs para cliente y producto
-        url_cliente = "http://localhost:5000/api/cliente"
-        url_producto = "http://localhost:5000/api/producto"
 
         cliente_response = requests.get(url_cliente + "/" + str(id_cliente))
         if cliente_response.status_code != 200:
