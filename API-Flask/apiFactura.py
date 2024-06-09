@@ -10,6 +10,15 @@ cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 # Simulación de base de datos
 facturas_db = {}
 
+class Factura(Resource):
+    def get(self, factura_id=None):
+        if factura_id is None:
+            return jsonify(list(facturas_db.values()))  # Devolver todas las facturas
+        factura = facturas_db.get(factura_id)
+        if factura:
+            return jsonify(factura)
+        return {"message": "Factura no encontrada"}, 404
+
 # Endpoints de APIs de cliente y producto
 url_cliente = "http://localhost:5000/api/cliente"
 url_producto = "http://localhost:5000/api/producto"
@@ -93,6 +102,14 @@ class Factura(Resource):
         return {"message": "Factura no encontrada"}, 404
 
 api.add_resource(Factura, "/api/boleta", "/api/boleta/<int:factura_id>")
+
+@app.route('/obtener_datos', methods=['GET'])
+def obtener_datos():
+    response = jsonify(list(facturas_db.values()))
+    response.headers.add('Access-Control-Allow-Origin', '*')  # Permitir el acceso a la API desde cualquier origen
+    return response
+
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5001)

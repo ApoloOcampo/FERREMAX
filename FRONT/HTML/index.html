@@ -103,98 +103,97 @@
     crossorigin="anonymous"></script>
 
 
-<script type="text/javascript">
-    // fetch == curl
-    const cboCliente = document.getElementById('cboCliente');
-    const listaClientes = fetch("http://localhost:5000/api/cliente", {
-        headers: {
-            "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*",
-        },
-        mode: 'cors'
-    });
-    const cboProducto = document.getElementById('cboProducto');
-    const listaProductos = fetch("http://localhost:5000/api/producto", {
-        headers: {
-            "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*",
-        },
-        mode: 'cors'
-    });
-
-    function seleccionarCliente() {
-        cboCliente.disabled = true;
-        document.getElementById('producto-section').style.display = 'block';
-    }
-
-    listaClientes.then(async function (e) {
-        await e.json().then(async function (objeto) {
-            let itemsStr = "";
-            objeto.filter(cliente => cliente.activo).forEach(element => {
-                console.log({ element });
-                itemsStr += "<option value='" + element.id + "'>" + element.razonSocial + "</option>";
-            });
-            cboCliente.innerHTML = itemsStr;
-        });
-    });
-
-    listaProductos.then(async function (e) {
-        await e.json().then(async function (objeto) {
-            let itemsStr = "";
-            objeto.filter(producto => producto.enStock).forEach(element => {
-                console.log({ element });
-                itemsStr += "<option value='" + element.id + "'>" + element.nombre + "</option>";
-            });
-            cboProducto.innerHTML = itemsStr;
-        });
-    }).catch(function (error) {
-        alert(error.message);
-    }).finally(() => {
-        console.log("Termino el proceso del fetch a clientes");
-    });
-
-
-    function clickEnviar(e) {
-        e.preventDefault();
-        const idCliente = document.getElementById("cboCliente").value;
-        const idProducto = document.getElementById("cboProducto").value;
-        const cantidad = document.getElementById("txtCantidad").value;
-
-        const objEnvio = {
-            "id_cliente": idCliente,
-            "id_producto": idProducto,
-            "cantidad": cantidad
-        };
-        console.log({ objEnvio });
-
-        // envio a factura - API FLASK
-        fetch("http://localhost:5001/api/boleta", {
+    <script type="text/javascript">
+        // fetch == curl
+        const cboCliente = document.getElementById('cboCliente');
+        const listaClientes = fetch("http://localhost:5000/api/cliente", {
             headers: {
                 "Content-Type": "application/json",
                 "Access-Control-Allow-Origin": "*",
             },
-            mode: 'cors',
-            method: 'POST',
-            body: JSON.stringify(objEnvio)
-        }).then(async function (e) {
-            await e.json().then((obj) => { console.log({ obj }) });
-        }).catch(function (error) { alert(error.message) })
-            .finally(function () {
-                Swal.fire({
-                    position: "top-end",
-                    icon: "success",
-                    title: "Producto agregado con éxito al carrito!",
-                    showConfirmButton: false,
-                    timer: 1500
+            mode: 'cors'
+        });
+        const cboProducto = document.getElementById('cboProducto');
+        const listaProductos = fetch("http://localhost:5000/api/producto", {
+            headers: {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*",
+            },
+            mode: 'cors'
+        });
+    
+        function seleccionarCliente() {
+            cboCliente.disabled = true;
+            document.getElementById('producto-section').style.display = 'block';
+        }
+    
+        listaClientes.then(async function (e) {
+            await e.json().then(async function (objeto) {
+                let itemsStr = "";
+                objeto.filter(cliente => cliente.activo).forEach(element => {
+                    console.log({ element });
+                    itemsStr += "<option value='" + element.id + "'>" + element.razonSocial + "</option>";
                 });
+                cboCliente.innerHTML = itemsStr;
             });
-
-    }
-
-    const btnAceptar = document.getElementById('btnAceptar');
-    btnAceptar.addEventListener("click", clickEnviar);
-</script>
-
-
-
-</html>
+        });
+    
+        listaProductos.then(async function (e) {
+            await e.json().then(async function (objeto) {
+                let itemsStr = "";
+                objeto.filter(producto => producto.enStock).forEach(element => {
+                    console.log({ element });
+                    itemsStr += "<option value='" + element.id + "'>" + element.nombre + "</option>";
+                });
+                cboProducto.innerHTML = itemsStr;
+            });
+        }).catch(function (error) {
+            alert(error.message);
+        }).finally(() => {
+            console.log("Termino el proceso del fetch a clientes");
+        });
+    
+    
+        function clickEnviar(e) {
+            e.preventDefault();
+            const idCliente = document.getElementById("cboCliente").value;
+            const idProducto = document.getElementById("cboProducto").value;
+            const cantidad = document.getElementById("txtCantidad").value;
+    
+            const objEnvio = {
+                "id_cliente": idCliente,
+                "id_producto": idProducto,
+                "cantidad": cantidad
+            };
+            console.log({ objEnvio });
+    
+            // envio a factura - API FLASK
+            fetch("http://localhost:5001/api/boleta", {
+                headers: {
+                    "Content-Type": "application/json",
+                    "Access-Control-Allow-Origin": "*",
+                },
+                mode: 'cors',
+                method: 'POST',
+                body: JSON.stringify(objEnvio)
+            }).then(async function (e) {
+                await e.json().then((obj) => { console.log({ obj }) });
+                // Habilitar cboCliente y deshabilitar los otros elementos después de enviar la solicitud
+                cboCliente.disabled = false;
+                document.getElementById("producto-section").disabled = true;
+            }).catch(function (error) { alert(error.message) })
+                .finally(function () {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "success",
+                        title: "Producto agregado con éxito al carrito!",
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                });
+    
+        }
+    
+        const btnAceptar = document.getElementById('btnAceptar');
+        btnAceptar.addEventListener("click", clickEnviar);
+    </script>
