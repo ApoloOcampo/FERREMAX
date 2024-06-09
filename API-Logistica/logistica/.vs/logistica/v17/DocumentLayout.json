@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\apfir\\Desktop\\FERREMAX\\FERREMAX\\API-Logistica\\logistica\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DC6E25CB-6592-4387-BAC0-8B4C26A331E0}|logistica.API\\logistica.API.csproj|c:\\users\\apfir\\desktop\\ferremax\\ferremax\\api-logistica\\logistica\\logistica.api\\models\\envio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC6E25CB-6592-4387-BAC0-8B4C26A331E0}|logistica.API\\logistica.API.csproj|solutionrelative:logistica.api\\models\\envio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC6E25CB-6592-4387-BAC0-8B4C26A331E0}|logistica.API\\logistica.API.csproj|c:\\users\\apfir\\desktop\\ferremax\\ferremax\\api-logistica\\logistica\\logistica.api\\models\\despacho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC6E25CB-6592-4387-BAC0-8B4C26A331E0}|logistica.API\\logistica.API.csproj|solutionrelative:logistica.api\\models\\despacho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC6E25CB-6592-4387-BAC0-8B4C26A331E0}|logistica.API\\logistica.API.csproj|c:\\users\\apfir\\desktop\\ferremax\\ferremax\\api-logistica\\logistica\\logistica.api\\controllers\\retirocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC6E25CB-6592-4387-BAC0-8B4C26A331E0}|logistica.API\\logistica.API.csproj|solutionrelative:logistica.api\\controllers\\retirocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC6E25CB-6592-4387-BAC0-8B4C26A331E0}|logistica.API\\logistica.API.csproj|c:\\users\\apfir\\desktop\\ferremax\\ferremax\\api-logistica\\logistica\\logistica.api\\models\\retiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC6E25CB-6592-4387-BAC0-8B4C26A331E0}|logistica.API\\logistica.API.csproj|solutionrelative:logistica.api\\models\\retiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC6E25CB-6592-4387-BAC0-8B4C26A331E0}|logistica.API\\logistica.API.csproj|c:\\users\\apfir\\desktop\\ferremax\\ferremax\\api-logistica\\logistica\\logistica.api\\controllers\\enviocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC6E25CB-6592-4387-BAC0-8B4C26A331E0}|logistica.API\\logistica.API.csproj|solutionrelative:logistica.api\\controllers\\enviocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC6E25CB-6592-4387-BAC0-8B4C26A331E0}|logistica.API\\logistica.API.csproj|c:\\users\\apfir\\desktop\\ferremax\\ferremax\\api-logistica\\logistica\\logistica.api\\controllers\\despachocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC6E25CB-6592-4387-BAC0-8B4C26A331E0}|logistica.API\\logistica.API.csproj|solutionrelative:logistica.api\\controllers\\despachocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "retiroController.cs",
+              "DocumentMoniker": "C:\\Users\\apfir\\Desktop\\FERREMAX\\FERREMAX\\API-Logistica\\logistica\\logistica.API\\Controllers\\retiroController.cs",
+              "RelativeDocumentMoniker": "logistica.API\\Controllers\\retiroController.cs",
+              "ToolTip": "C:\\Users\\apfir\\Desktop\\FERREMAX\\FERREMAX\\API-Logistica\\logistica\\logistica.API\\Controllers\\retiroController.cs",
+              "RelativeToolTip": "logistica.API\\Controllers\\retiroController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T22:27:58.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "despacho.cs",
+              "DocumentMoniker": "C:\\Users\\apfir\\Desktop\\FERREMAX\\FERREMAX\\API-Logistica\\logistica\\logistica.API\\Models\\despacho.cs",
+              "RelativeDocumentMoniker": "logistica.API\\Models\\despacho.cs",
+              "ToolTip": "C:\\Users\\apfir\\Desktop\\FERREMAX\\FERREMAX\\API-Logistica\\logistica\\logistica.API\\Models\\despacho.cs",
+              "RelativeToolTip": "logistica.API\\Models\\despacho.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T22:25:05.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "envio.cs",
+              "DocumentMoniker": "C:\\Users\\apfir\\Desktop\\FERREMAX\\FERREMAX\\API-Logistica\\logistica\\logistica.API\\Models\\envio.cs",
+              "RelativeDocumentMoniker": "logistica.API\\Models\\envio.cs",
+              "ToolTip": "C:\\Users\\apfir\\Desktop\\FERREMAX\\FERREMAX\\API-Logistica\\logistica\\logistica.API\\Models\\envio.cs",
+              "RelativeToolTip": "logistica.API\\Models\\envio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T22:26:22.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "retiro.cs",
+              "DocumentMoniker": "C:\\Users\\apfir\\Desktop\\FERREMAX\\FERREMAX\\API-Logistica\\logistica\\logistica.API\\Models\\retiro.cs",
+              "RelativeDocumentMoniker": "logistica.API\\Models\\retiro.cs",
+              "ToolTip": "C:\\Users\\apfir\\Desktop\\FERREMAX\\FERREMAX\\API-Logistica\\logistica\\logistica.API\\Models\\retiro.cs",
+              "RelativeToolTip": "logistica.API\\Models\\retiro.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T22:25:49.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "envioController.cs",
+              "DocumentMoniker": "C:\\Users\\apfir\\Desktop\\FERREMAX\\FERREMAX\\API-Logistica\\logistica\\logistica.API\\Controllers\\envioController.cs",
+              "RelativeDocumentMoniker": "logistica.API\\Controllers\\envioController.cs",
+              "ToolTip": "C:\\Users\\apfir\\Desktop\\FERREMAX\\FERREMAX\\API-Logistica\\logistica\\logistica.API\\Controllers\\envioController.cs",
+              "RelativeToolTip": "logistica.API\\Controllers\\envioController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T22:28:09.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "despachoController.cs",
+              "DocumentMoniker": "C:\\Users\\apfir\\Desktop\\FERREMAX\\FERREMAX\\API-Logistica\\logistica\\logistica.API\\Controllers\\despachoController.cs",
+              "RelativeDocumentMoniker": "logistica.API\\Controllers\\despachoController.cs",
+              "ToolTip": "C:\\Users\\apfir\\Desktop\\FERREMAX\\FERREMAX\\API-Logistica\\logistica\\logistica.API\\Controllers\\despachoController.cs",
+              "RelativeToolTip": "logistica.API\\Controllers\\despachoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T22:27:42.821Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
