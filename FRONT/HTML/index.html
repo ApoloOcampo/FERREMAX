@@ -66,6 +66,20 @@
 
                                     </div>
                                 </div>
+                                    <br>
+                                <div class="d-flex justify-content-md-center">
+                                <div class="checkbox-wrapper-65">
+                                    <label for="cbk1-65">
+                                      <input type="checkbox" id="cbk1-65">
+                                      <span class="cbx">
+                                        <svg width="12px" height="11px" viewBox="0 0 12 11">
+                                          <polyline points="1 6.29411765 4.5 10 11 1"></polyline>
+                                        </svg>
+                                      </span>
+                                      <span style="color: #ffffff;">DESEO CON DESPACHO</span>
+                                    </label>
+                                </div>
+                            </div>
 
                                 <br>
 
@@ -81,13 +95,7 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
+      
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -159,6 +167,9 @@
             const idCliente = document.getElementById("cboCliente").value;
             const idProducto = document.getElementById("cboProducto").value;
             const cantidad = document.getElementById("txtCantidad").value;
+            setTimeout(function() {
+                window.location.href = "http://127.0.0.1:5500/HTML/index.html";
+            }, 3000);
     
             const objEnvio = {
                 "id_cliente": idCliente,
