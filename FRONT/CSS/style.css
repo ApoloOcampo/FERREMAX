@@ -1,0 +1,425 @@
+/* imagen logo */
+.img-header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    opacity: 0.8;
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 6px 10px -4px rgba(0, 0, 0, .15);
+    background-color: #20153bc7;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    border: 0 none;
+    box-shadow: 0 12px 19px -7px rgba(0, 0, 0, .3);
+}
+
+.card-title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+body {
+    background-image: url("https://img.freepik.com/fotos-premium/conjunto-herramientas-e-instrumentos-fondo-superficie-madera_182252-6912.jpg?w=900");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.card-body{
+    padding: 50px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=number],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.col-25 {
+    float: left;
+    width: 30%;
+    margin-top: 25px;
+}
+
+.col-75 {
+    float: left;
+    width: 70%;
+    margin-top: 25px;
+}
+
+/* boton aceptar */
+.button-aceptar {
+    align-items: center;
+    appearance: none;
+    background-clip: padding-box;
+    background-color: initial;
+    background-image: none;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-family: Eina01, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    justify-content: center;
+    line-height: 24px;
+    margin: 0;
+    min-height: 64px;
+    outline: none;
+    overflow: visible;
+    padding: 19px 26px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: auto;
+    word-break: keep-all;
+    z-index: 0;
+}
+
+@media (min-width: 768px) {
+    .button-aceptar {
+        padding: 19px 32px;
+    }
+}
+
+.button-aceptar:before,
+.button-aceptar:after {
+    border-radius: 80px;
+}
+
+.button-aceptar:before {
+    background-image: linear-gradient(92.83deg, #388631c5 0, #58a54588 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+}
+
+.button-aceptar:after {
+    background-color: initial;
+    background-image: linear-gradient(#3c8332 0, #277a24 100%);
+    bottom: 4px;
+    content: "";
+    display: block;
+    left: 4px;
+    overflow: hidden;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    transition: all 100ms ease-out;
+    z-index: -1;
+}
+
+.button-aceptar:hover:not(:disabled):before {
+    background: linear-gradient(92.83deg, rgba(48, 206, 0, 0.308) 0%, rgba(57, 249, 19, 0.301) 100%);
+}
+
+.button-aceptar:hover:not(:disabled):after {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition-timing-function: ease-in;
+    opacity: 0;
+}
+
+.button-aceptar:active:not(:disabled) {
+    color: #ccc;
+}
+
+.button-aceptar:active:not(:disabled):before {
+    background-image: linear-gradient(0deg, rgba(46, 165, 22, 0.2), rgba(16, 63, 4, 0.2)), linear-gradient(92.83deg, #63ff26e1 0, #54f913de 100%);
+}
+
+.button-aceptar:active:not(:disabled):after {
+    background-image: linear-gradient(#2b7c24 0, #3c852a 100%);
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    top: 4px;
+}
+
+.button-aceptar:disabled {
+    cursor: default;
+    opacity: .24;
+}
+
+/* boton cancelar */
+.button-cancelar {
+    align-items: center;
+    appearance: none;
+    background-clip: padding-box;
+    background-color: initial;
+    background-image: none;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-family: Eina01, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    justify-content: center;
+    line-height: 24px;
+    margin: 0;
+    min-height: 64px;
+    outline: none;
+    overflow: visible;
+    padding: 19px 26px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: auto;
+    word-break: keep-all;
+    z-index: 0;
+}
+
+@media (min-width: 768px) {
+    .button-cancelar {
+        padding: 19px 32px;
+    }
+}
+
+.button-cancelar:before,
+.button-cancelar:after {
+    border-radius: 80px;
+}
+
+.button-cancelar:before {
+    background-image: linear-gradient(92.83deg, #922a2a69 0, #8a2b2b71 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+}
+
+.button-cancelar:after {
+    background-color: initial;
+    background-image: linear-gradient(#a52020f5 0, #8f2222e1 100%);
+    bottom: 4px;
+    content: "";
+    display: block;
+    left: 4px;
+    overflow: hidden;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    transition: all 100ms ease-out;
+    z-index: -1;
+}
+
+.button-cancelar:hover:not(:disabled):before {
+    background: linear-gradient(92.83deg, rgba(160, 49, 49, 0.548) 0%, rgba(146, 46, 46, 0.404) 100%);
+}
+
+.button-cancelar:hover:not(:disabled):after {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition-timing-function: ease-in;
+    opacity: 0;
+}
+
+.button-cancelar:active:not(:disabled) {
+    color: #ccc;
+}
+
+.button-cancelar:active:not(:disabled):before {
+    background-image: linear-gradient(0deg, rgba(165, 22, 22, 0.2), rgba(63, 4, 4, 0.2)), linear-gradient(92.83deg, #be1d1df6 0, #a82626e5 100%);
+}
+
+.button-cancelar:active:not(:disabled):after {
+    background-image: linear-gradient(#b82b2bc5 0, #bb3131f1 100%);
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    top: 4px;
+}
+
+.button-cancelar:disabled {
+    cursor: default;
+    opacity: .24;
+}
+
+/*btn compra*/
+.button-comprar {
+    align-items: center;
+    appearance: none;
+    background-clip: padding-box;
+    background-color: initial;
+    background-image: none;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-family: Eina01, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    justify-content: center;
+    line-height: 24px;
+    margin: 0;
+    min-height: 64px;
+    outline: none;
+    overflow: visible;
+    padding: 19px 26px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: auto;
+    word-break: keep-all;
+    z-index: 0;
+}
+
+@media (min-width: 768px) {
+    .button-comprar {
+        padding: 19px 32px;
+    }
+}
+
+.button-comprar:before,
+.button-comprar:after {
+    border-radius: 80px;
+}
+
+.button-comprar:before {
+    background-image: linear-gradient(92.83deg, #250a6469 0, #1419a171 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+}
+
+.button-comprar:after {
+    background-color: initial;
+    background-image: linear-gradient(#2209c0f5 0, #3e0fcde1 100%);
+    bottom: 4px;
+    content: "";
+    display: block;
+    left: 4px;
+    overflow: hidden;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    transition: all 100ms ease-out;
+    z-index: -1;
+}
+
+.button-comprar:hover:not(:disabled):before {
+    background: linear-gradient(92.83deg, rgba(69, 45, 165, 0.548) 0%, rgba(50, 16, 185, 0.404) 100%);
+}
+
+.button-comprar:hover:not(:disabled):after {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition-timing-function: ease-in;
+    opacity: 0;
+}
+
+.button-comprar:active:not(:disabled) {
+    color: #ccc;
+}
+
+.button-comprar:active:not(:disabled):before {
+    background-image: linear-gradient(0deg, rgba(27, 1, 201, 0.2), rgba(24, 4, 63, 0.2)), linear-gradient(92.83deg, #331dbef6 0, #4026a8e5 100%);
+}
+
+.button-comprar:active:not(:disabled):after {
+    background-image: linear-gradient(#3e2bb8c5 0, #4d23ccf1 100%);
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    top: 4px;
+}
+
+.button-comprar:disabled {
+    cursor: default;
+    opacity: .24;
+}
+/* ALERT */

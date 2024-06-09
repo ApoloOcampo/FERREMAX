@@ -1,34 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\",
+  "WorkspaceRootPath": "C:\\Users\\apfir\\Desktop\\FERREMAX\\API-Csharp\\Ferremax\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7F47B056-EEED-43E2-8DB1-EADC44C5ECB5}|Ferremax.API\\Ferremax.API.csproj|c:\\users\\usuario\\desktop\\ferremaxx\\ferremax\\api-csharp\\ferremax\\ferremax.api\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F47B056-EEED-43E2-8DB1-EADC44C5ECB5}|Ferremax.API\\Ferremax.API.csproj|solutionrelative:ferremax.api\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F47B056-EEED-43E2-8DB1-EADC44C5ECB5}|Ferremax.API\\Ferremax.API.csproj|c:\\users\\usuario\\desktop\\ferremaxx\\ferremax\\api-csharp\\ferremax\\ferremax.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F47B056-EEED-43E2-8DB1-EADC44C5ECB5}|Ferremax.API\\Ferremax.API.csproj|solutionrelative:ferremax.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F47B056-EEED-43E2-8DB1-EADC44C5ECB5}|Ferremax.API\\Ferremax.API.csproj|c:\\users\\usuario\\desktop\\ferremaxx\\ferremax\\api-csharp\\ferremax\\ferremax.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7F47B056-EEED-43E2-8DB1-EADC44C5ECB5}|Ferremax.API\\Ferremax.API.csproj|c:\\users\\apfir\\desktop\\ferremax\\api-csharp\\ferremax\\ferremax.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F47B056-EEED-43E2-8DB1-EADC44C5ECB5}|Ferremax.API\\Ferremax.API.csproj|solutionrelative:ferremax.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F47B056-EEED-43E2-8DB1-EADC44C5ECB5}|Ferremax.API\\Ferremax.API.csproj|c:\\users\\usuario\\desktop\\ferremaxx\\ferremax\\api-csharp\\ferremax\\ferremax.api\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F47B056-EEED-43E2-8DB1-EADC44C5ECB5}|Ferremax.API\\Ferremax.API.csproj|solutionrelative:ferremax.api\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F47B056-EEED-43E2-8DB1-EADC44C5ECB5}|Ferremax.API\\Ferremax.API.csproj|c:\\users\\usuario\\desktop\\ferremaxx\\ferremax\\api-csharp\\ferremax\\ferremax.api\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F47B056-EEED-43E2-8DB1-EADC44C5ECB5}|Ferremax.API\\Ferremax.API.csproj|solutionrelative:ferremax.api\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F47B056-EEED-43E2-8DB1-EADC44C5ECB5}|Ferremax.API\\Ferremax.API.csproj|c:\\users\\usuario\\desktop\\ferremaxx\\ferremax\\api-csharp\\ferremax\\ferremax.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F47B056-EEED-43E2-8DB1-EADC44C5ECB5}|Ferremax.API\\Ferremax.API.csproj|solutionrelative:ferremax.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F47B056-EEED-43E2-8DB1-EADC44C5ECB5}|Ferremax.API\\Ferremax.API.csproj|c:\\users\\usuario\\desktop\\ferremaxx\\ferremax\\api-csharp\\ferremax\\ferremax.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7F47B056-EEED-43E2-8DB1-EADC44C5ECB5}|Ferremax.API\\Ferremax.API.csproj|solutionrelative:ferremax.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,95 +14,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\appsettings.json",
-              "RelativeDocumentMoniker": "Ferremax.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\appsettings.json",
-              "RelativeToolTip": "Ferremax.API\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-08T03:58:34.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Models\\Producto.cs",
-              "RelativeDocumentMoniker": "Ferremax.API\\Models\\Producto.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Models\\Producto.cs",
-              "RelativeToolTip": "Ferremax.API\\Models\\Producto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T03:58:02.938Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "Ferremax.API\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "Ferremax.API\\Controllers\\ClienteController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAAB8AAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T03:57:54.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductoController.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Controllers\\ProductoController.cs",
-              "RelativeDocumentMoniker": "Ferremax.API\\Controllers\\ProductoController.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Controllers\\ProductoController.cs",
-              "RelativeToolTip": "Ferremax.API\\Controllers\\ProductoController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAADwvyMAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T03:57:51.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Models\\Cliente.cs",
-              "RelativeDocumentMoniker": "Ferremax.API\\Models\\Cliente.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Models\\Cliente.cs",
-              "RelativeToolTip": "Ferremax.API\\Models\\Cliente.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T01:36:08.514Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Program.cs",
-              "RelativeDocumentMoniker": "Ferremax.API\\Program.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Program.cs",
-              "RelativeToolTip": "Ferremax.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T01:36:06.908Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Startup.cs",
+              "DocumentMoniker": "C:\\Users\\apfir\\Desktop\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Startup.cs",
               "RelativeDocumentMoniker": "Ferremax.API\\Startup.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Startup.cs",
+              "ToolTip": "C:\\Users\\apfir\\Desktop\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Startup.cs",
               "RelativeToolTip": "Ferremax.API\\Startup.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-07T01:30:28.515Z",
               "EditorCaption": ""
