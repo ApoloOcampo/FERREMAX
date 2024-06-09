@@ -1,8 +1,20 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "qfK/QozIJZvZ3oBDhmbLZ2VT22FPTC9lzL8QP8+ogX4/DvCzEjoJZotkNi4a9Qq5BMJ95hK5ENFYD3R3aqPJbw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Desktop\\ferremaxx\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Ferremax.API.csproj",
   "expectedPackageFiles": [],
+=======
+  "dgSpecHash": "d2GukL3UdH/++EjxbrjIbMhGkH6VAaLTIja3WFohn6sZIfTx6sRKISQrujzbkNWPVZUo96dJ8la0VQOU+FQgAA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\usuario\\OneDrive\\Escritorio\\Duoc\\5 semestre\\integracion de plataforma\\FERREMAX\\API-Csharp\\Ferremax\\Ferremax.API\\Ferremax.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\usuario\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
+>>>>>>> origin/sergio
   "logs": []
 }
