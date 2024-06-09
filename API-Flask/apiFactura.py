@@ -12,6 +12,9 @@ CORS(app, resources={r"/api/*": {"origins": "*"}})
 # Simulación de base de datos
 facturas_db = {}
 
+url_cliente = "http://localhost:5000/api/cliente"
+url_producto = "http://localhost:5000/api/producto"
+
 class Factura(Resource):
     def get(self, factura_id=None):
         if factura_id is None:
@@ -25,10 +28,6 @@ class Factura(Resource):
         json = request.get_json()
         id_cliente = json["id_cliente"]
         productos = json["productos"]
-
-        # Suponiendo que tenemos URLs para cliente y producto
-        url_cliente = "http://localhost:5000/api/cliente"
-        url_producto = "http://localhost:5000/api/producto"
 
         cliente_response = requests.get(url_cliente + "/" + str(id_cliente))
         if cliente_response.status_code != 200:
