@@ -45,3 +45,23 @@ C:\Users\usuario\OneDrive\Escritorio\Duoc\5 semestre\integracion de plataforma\F
 C:\Users\usuario\OneDrive\Escritorio\Duoc\5 semestre\integracion de plataforma\FERREMAX\API-Csharp\Ferremax\Ferremax.API\obj\Debug\netcoreapp3.1\Ferremax.API.dll
 C:\Users\usuario\OneDrive\Escritorio\Duoc\5 semestre\integracion de plataforma\FERREMAX\API-Csharp\Ferremax\Ferremax.API\obj\Debug\netcoreapp3.1\Ferremax.API.pdb
 C:\Users\usuario\OneDrive\Escritorio\Duoc\5 semestre\integracion de plataforma\FERREMAX\API-Csharp\Ferremax\Ferremax.API\obj\Debug\netcoreapp3.1\Ferremax.API.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\ferremaxxxxx\FERREMAX\API-Csharp\Ferremax\Ferremax.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Usuario\Desktop\ferremaxxxxx\FERREMAX\API-Csharp\Ferremax\Ferremax.API\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Usuario\Desktop\ferremaxxxxx\FERREMAX\API-Csharp\Ferremax\Ferremax.API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Usuario\Desktop\ferremaxxxxx\FERREMAX\API-Csharp\Ferremax\Ferremax.API\bin\Debug\netcoreapp3.1\Ferremax.API.exe
+C:\Users\Usuario\Desktop\ferremaxxxxx\FERREMAX\API-Csharp\Ferremax\Ferremax.API\bin\Debug\netcoreapp3.1\Ferremax.API.deps.json
+C:\Users\Usuario\Desktop\ferremaxxxxx\FERREMAX\API-Csharp\Ferremax\Ferremax.API\bin\Debug\netcoreapp3.1\Ferremax.API.runtimeconfig.json
+C:\Users\Usuario\Desktop\ferremaxxxxx\FERREMAX\API-Csharp\Ferremax\Ferremax.API\bin\Debug\netcoreapp3.1\Ferremax.API.runtimeconfig.dev.json
+C:\Users\Usuario\Desktop\ferremaxxxxx\FERREMAX\API-Csharp\Ferremax\Ferremax.API\bin\Debug\netcoreapp3.1\Ferremax.API.dll
+C:\Users\Usuario\Desktop\ferremaxxxxx\FERREMAX\API-Csharp\Ferremax\Ferremax.API\bin\Debug\netcoreapp3.1\Ferremax.API.pdb
+C:\Users\Usuario\Desktop\ferremaxxxxx\FERREMAX\API-Csharp\Ferremax\Ferremax.API\obj\Debug\netcoreapp3.1\Ferremax.API.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\ferremaxxxxx\FERREMAX\API-Csharp\Ferremax\Ferremax.API\obj\Debug\netcoreapp3.1\Ferremax.API.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\ferremaxxxxx\FERREMAX\API-Csharp\Ferremax\Ferremax.API\obj\Debug\netcoreapp3.1\Ferremax.API.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\ferremaxxxxx\FERREMAX\API-Csharp\Ferremax\Ferremax.API\obj\Debug\netcoreapp3.1\Ferremax.API.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\ferremaxxxxx\FERREMAX\API-Csharp\Ferremax\Ferremax.API\obj\Debug\netcoreapp3.1\Ferremax.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Usuario\Desktop\ferremaxxxxx\FERREMAX\API-Csharp\Ferremax\Ferremax.API\obj\Debug\netcoreapp3.1\Ferremax.API.RazorTargetAssemblyInfo.cache
+C:\Users\Usuario\Desktop\ferremaxxxxx\FERREMAX\API-Csharp\Ferremax\Ferremax.API\obj\Debug\netcoreapp3.1\staticwebassets\Ferremax.API.StaticWebAssets.Manifest.cache
+C:\Users\Usuario\Desktop\ferremaxxxxx\FERREMAX\API-Csharp\Ferremax\Ferremax.API\obj\Debug\netcoreapp3.1\staticwebassets\Ferremax.API.StaticWebAssets.xml
+C:\Users\Usuario\Desktop\ferremaxxxxx\FERREMAX\API-Csharp\Ferremax\Ferremax.API\obj\Debug\netcoreapp3.1\Ferremax.API.dll
+C:\Users\Usuario\Desktop\ferremaxxxxx\FERREMAX\API-Csharp\Ferremax\Ferremax.API\obj\Debug\netcoreapp3.1\Ferremax.API.pdb
+C:\Users\Usuario\Desktop\ferremaxxxxx\FERREMAX\API-Csharp\Ferremax\Ferremax.API\obj\Debug\netcoreapp3.1\Ferremax.API.genruntimeconfig.cache

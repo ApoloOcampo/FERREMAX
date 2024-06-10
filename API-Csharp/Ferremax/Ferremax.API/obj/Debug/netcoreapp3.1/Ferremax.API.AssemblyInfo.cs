@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ferremax.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0404e511ad8fc230a697f1b41e1a159221640f48")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ferremax.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ferremax.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
