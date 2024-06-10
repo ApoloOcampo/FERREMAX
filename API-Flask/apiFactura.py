@@ -40,18 +40,27 @@ class Factura(Resource):
         detalles = []
 
         for prod in productos:
-            producto_response = requests.get(url_producto + "/" + str(prod["id"]))
-            if producto_response.status_code != 200:
-                return {"message": f"Error en la consulta del producto {prod['id']}"}, 400
+            if prod["id"] == "despacho":
+                detalle = {
+                    "id_producto": "despacho",
+                    "nombre_producto": "Despacho",
+                    "precio": 5000,
+                    "cantidad": 1,
+                    "total": 5000
+                }
+            else:
+                producto_response = requests.get(url_producto + "/" + str(prod["id"]))
+                if producto_response.status_code != 200:
+                    return {"message": f"Error en la consulta del producto {prod['id']}"}, 400
 
-            producto_json = producto_response.json()
-            detalle = {
-                "id_producto": producto_json["id"],
-                "nombre_producto": producto_json["nombre"],
-                "precio": producto_json["precio"],
-                "cantidad": prod["cantidad"],
-                "total": producto_json["precio"] * int(prod["cantidad"])
-            }
+                producto_json = producto_response.json()
+                detalle = {
+                    "id_producto": producto_json["id"],
+                    "nombre_producto": producto_json["nombre"],
+                    "precio": producto_json["precio"],
+                    "cantidad": prod["cantidad"],
+                    "total": producto_json["precio"] * int(prod["cantidad"])
+                }
             total_venta += detalle["total"]
             detalles.append(detalle)
 
@@ -91,18 +100,27 @@ class Factura(Resource):
             detalles = []
 
             for prod in productos:
-                producto_response = requests.get(url_producto + "/" + str(prod["id"]))
-                if producto_response.status_code != 200:
-                    return {"message": f"Error en la consulta del producto {prod['id']}"}, 400
+                if prod["id"] == "despacho":
+                    detalle = {
+                        "id_producto": "despacho",
+                        "nombre_producto": "Despacho",
+                        "precio": 5000,
+                        "cantidad": 1,
+                        "total": 5000
+                    }
+                else:
+                    producto_response = requests.get(url_producto + "/" + str(prod["id"]))
+                    if producto_response.status_code != 200:
+                        return {"message": f"Error en la consulta del producto {prod['id']}"}, 400
 
-                producto_json = producto_response.json()
-                detalle = {
-                    "id_producto": producto_json["id"],
-                    "nombre_producto": producto_json["nombre"],
-                    "precio": producto_json["precio"],
-                    "cantidad": prod["cantidad"],
-                    "total": producto_json["precio"] * int(prod["cantidad"])
-                }
+                    producto_json = producto_response.json()
+                    detalle = {
+                        "id_producto": producto_json["id"],
+                        "nombre_producto": producto_json["nombre"],
+                        "precio": producto_json["precio"],
+                        "cantidad": prod["cantidad"],
+                        "total": producto_json["precio"] * int(prod["cantidad"])
+                    }
                 total_venta += detalle["total"]
                 detalles.append(detalle)
 

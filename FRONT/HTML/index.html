@@ -47,18 +47,14 @@
                                 <div class="col-75">
                                     <input type="number" id="txtCantidad" name="txtCantidad" placeholder="Ingrese la cantidad..." min="1" required>
                                 </div>
-                                <div class="d-flex justify-content-center mt-3">
-                                    <div class="checkbox-wrapper-65">
-                                        <label for="cbk1-65">
-                                            <input type="checkbox" id="cbk1-65">
-                                            <span class="cbx">
-                                                <svg width="12px" height="11px" viewBox="0 0 12 11">
-                                                    <polyline points="1 6.29411765 4.5 10 11 1"></polyline>
-                                                </svg>
-                                            </span>
-                                            <span class="text-white">DESEO CON DESPACHO</span>
-                                        </label>
-                                    </div>
+                                <div class="col-25 mt-3">
+                                    <label for="cboDespacho" class="text-white"><b>OPCIÓN DE DESPACHO</b></label>
+                                </div>
+                                <div class="col-75 mt-3">
+                                    <select id="cboDespacho" name="cboDespacho" class="form-select">
+                                        <option value="sin">Sin Despacho</option>
+                                        <option value="con">Con Despacho</option>
+                                    </select>
                                 </div>
                                 <div class="d-flex justify-content-end mt-3">
                                     <button class="btn btn-secondary me-2" id="btnCancelar">CANCELAR</button>
@@ -85,6 +81,7 @@
     <script type="text/javascript">
         const cboCliente = document.getElementById('cboCliente');
         const cboProducto = document.getElementById('cboProducto');
+        const cboDespacho = document.getElementById('cboDespacho');
         let carrito = [];
         let productos = [];
 
@@ -129,11 +126,10 @@
         function updateCartUI() {
             const carritoDiv = document.getElementById('carrito');
             carritoDiv.innerHTML = carrito.map((item, index) => {
-                const producto = productos.find(prod => prod.id == item.id);
-                const totalPrecio = item.cantidad * producto.precio;
+                const totalPrecio = item.cantidad * item.precio;
                 return `
                 <div class="cart-item">
-                    <p>Producto: ${item.nombre} - Cantidad: ${item.cantidad} - Precio: ${producto.precio} - Total: ${totalPrecio}</p>
+                    <p>Producto: ${item.nombre} - Cantidad: ${item.cantidad} - Precio: ${item.precio} - Total: ${totalPrecio}</p>
                     <button class="btn btn-danger btn-sm" onclick="removeFromCart(${index})">Eliminar</button>
                 </div>
                 `;
@@ -159,6 +155,15 @@
 
             const producto = { id: idProducto, nombre, cantidad, precio };
             carrito.push(producto);
+
+            if (cboDespacho.value === 'con') {
+                const despacho = { id: 'despacho', nombre: 'Despacho', cantidad: 1, precio: 5000 };
+                carrito = carrito.filter(item => item.id !== 'despacho'); // Remove existing despacho item if any
+                carrito.push(despacho);
+            } else {
+                carrito = carrito.filter(item => item.id !== 'despacho'); // Remove despacho item if switching to sin despacho
+            }
+
             updateCartUI();
         });
 
