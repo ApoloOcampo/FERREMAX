@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado de Envío</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../CSS/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Estado de Envío</h5>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">ID Boleta</th>
+                                        <th scope="col">Estado de Envío</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tablaEstadoEnvio">
+                                    <!-- Contenido generado dinámicamente -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <button class="btn btn-primary mt-3" id="btnConfirmar">Confirmar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Primero obtenemos los datos de boletas
+            fetch('http://localhost:5001/api/boleta')
+                .then(response => response.json())
+                .then(data => {
+                    const tbody = document.getElementById('tablaEstadoEnvio');
+                    tbody.innerHTML = '';
+                    console.log(data);
+
+                    // Iteramos sobre los datos de boletas
+                    for (const key in data) {
+                        if (Object.hasOwnProperty.call(data, key)) {
+                            const item = data[key];
+                            // Creamos la fila inicial con el ID de la boleta
+                            const row = document.createElement('tr');
+                            row.innerHTML = `<td>${item.id}</td>
+                                             <td>
+                                                <select class="form-control" id="estado-envio-${item.id}">
+                                                    <!-- Opciones se agregan dinámicamente -->
+                                                </select>
+                                             </td>`;
+                            tbody.appendChild(row);
+                        }
+                    }
+
+                    // Luego obtenemos los tipos
+                    fetch('http://localhost:5002/api/despacho')
+                        .then(response => response.json())
+                        .then(despachoData => {
+                            console.log(despachoData);
+
+                            // Iteramos sobre los datos de boletas nuevamente para llenar las opciones de los select
+                            for (const key in data) {
+                                if (Object.hasOwnProperty.call(data, key)) {
+                                    const item = data[key];
+                                    const select = document.getElementById(`estado-envio-${item.id}`);
+
+                                    // Iteramos sobre los datos de despacho para agregar las opciones
+                                    for (const despachoKey in despachoData) {
+                                        if (Object.hasOwnProperty.call(despachoData, despachoKey)) {
+                                            const despachoItem = despachoData[despachoKey];
+                                            const option = document.createElement('option');
+                                            option.value = despachoItem.id; // o cualquier identificador que tenga sentido
+                                            option.textContent = despachoItem.tipo;
+                                            select.appendChild(option);
+                                        }
+                                    }
+                                }
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Error fetching despacho data:', error);
+                        });
+                })
+                .catch(error => {
+                    console.error('Error fetching boleta data:', error);
+                });
+
+            document.getElementById('btnConfirmar').addEventListener('click', function () {
+                const rows = document.querySelectorAll('#tablaEstadoEnvio tr');
+                const selectedData = [];
+
+                rows.forEach(row => {
+                    const idBoleta = row.cells[0].textContent;
+                    const selectElement = row.querySelector('select');
+                    const selectedOption = selectElement.value;
+                    selectedData.push({ id: idBoleta, estado: selectedOption });
+                });
+
+                fetch('http://localhost:5003/api/guardarEstado', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(selectedData)
+                
+                })
+                .then(response => response.json())
+                .then(result => {
+                    console.log(result);
+                    Swal.fire(
+                        'Guardado!',
+                        'Los estados de envío han sido guardados.',
+                        'success'
+                    );
+                })
+                .catch(error => {
+                    console.error('Error saving data:', error);
+                    Swal.fire(
+                        'Error!',
+                        'Hubo un problema al guardar los datos.',
+                        'error'
+                    );
+                });
+                console.log(selectedData)
+            });
+        });
+    </script>
+</body>
+</html>
