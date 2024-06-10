@@ -1,6 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,81 +12,59 @@
     <link href="../JS/alerts.js" rel="stylesheet" />
     <!-- SWEET ALERT -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-
 </head>
-
 <body>
     <img src="https://www.ferremax.cl/storage/2022/01/Group-34.png" class="img-header" alt="logo">
 
-
     <div class="container mt-2">
         <div class="row justify-content-md-center">
-            <div class="col-sm-8 ">
+            <div class="col-sm-8">
                 <div class="card">
                     <div class="card-body">
-                        <h2 class="card-title justify-content-md-center">VENTA DE PRODUCTOS</h2>
+                        <h2 class="card-title text-center">VENTA DE PRODUCTOS</h2>
 
-                        <div class="form-row " novalidate>
-                            <br>
+                        <div class="form-row">
                             <div class="row">
-                                <h5 class="card-title justify-content-md-center" style="color: #dadada;">DATOS CLIENTE
-                                </h5>
+                                <h5 class="card-title text-center text-secondary">DATOS CLIENTE</h5>
                                 <div class="col-25">
-                                    <label for="cboCliente" style="color: #ffffff;"><b>CLIENTE</b></label>
+                                    <label for="cboCliente" class="text-white"><b>CLIENTE</b></label>
                                 </div>
                                 <div class="col-75">
-                                    <select id="cboCliente" name="cboCliente" placeholder="Ingrese la cantidad..." required onchange="seleccionarCliente()">
+                                    <select id="cboCliente" name="cboCliente" required onchange="seleccionarCliente()"></select>
+                                </div>
+                            </div>
+                            <div class="row mt-3" id="producto-section" style="display: none;">
+                                <h5 class="card-title text-center text-secondary">DATOS DE PRODUCTO</h5>
+                                <div class="col-25">
+                                    <label for="cboProducto" class="text-white"><b>PRODUCTO</b></label>
+                                </div>
+                                <div class="col-75">
+                                    <select id="cboProducto" name="cboProducto" required></select>
+                                </div>
+                                <div class="col-25 mt-3">
+                                    <label for="txtCantidad" class="text-white"><b>CANTIDAD</b></label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="number" id="txtCantidad" name="txtCantidad" placeholder="Ingrese la cantidad..." min="1" required>
+                                </div>
+                                <div class="col-25 mt-3">
+                                    <label for="cboDespacho" class="text-white"><b>OPCIÓN DE DESPACHO</b></label>
+                                </div>
+                                <div class="col-75 mt-3">
+                                    <select id="cboDespacho" name="cboDespacho" class="form-select">
+                                        <option value="sin">Sin Despacho</option>
+                                        <option value="con">Con Despacho</option>
                                     </select>
                                 </div>
-                            </div>
-                            <br>
-                            <div class="row" id="producto-section" style="display: none;">
-                                <div class="row">
-                                    <h5 class="card-title justify-content-md-center" style="color: #dadada;">DATOS DE
-                                        PRODUCTO</h5>
-                                    <div class="col-25">
-
-                                        <label for="cboProducto" style="color: #ffffff;"><b>PRODUCTO</b></label>
-                                    </div>
-                                    <div class="col-75">
-                                        <select id="cboProducto" name="cboProducto" required>
-                                        </select>
-                                    </div>
+                                <div class="d-flex justify-content-end mt-3">
+                                    <button class="btn btn-secondary me-2" id="btnCancelar">CANCELAR</button>
+                                    <button class="btn btn-primary" id="btnAgregar">AGREGAR</button>
                                 </div>
-
-                                <div class="row">
-                                    <div class="col-25">
-                                        <label for="txtCantidad" style="color: #ffffff;"><b>CANTIDAD</b></label>
-                                    </div>
-                                    <div class="col-75">
-                                        <input type="number" id="txtCantidad" name="txtCantidad"
-                                            placeholder="Ingrese la cantidad..." min="1" required>
-
-                                    </div>
+                                <div class="d-flex justify-content-end mt-3">
+                                    <button class="btn btn-success" id="btnFinalizar">FINALIZAR COMPRA</button>
                                 </div>
-                                    <br>
-                                <div class="d-flex justify-content-md-center">
-                                <div class="checkbox-wrapper-65">
-                                    <label for="cbk1-65">
-                                      <input type="checkbox" id="cbk1-65">
-                                      <span class="cbx">
-                                        <svg width="12px" height="11px" viewBox="0 0 12 11">
-                                          <polyline points="1 6.29411765 4.5 10 11 1"></polyline>
-                                        </svg>
-                                      </span>
-                                      <span style="color: #ffffff;">DESEO CON DESPACHO</span>
-                                    </label>
-                                </div>
-                            </div>
-
-                                <br>
-
-                                <div class="d-flex justify-content-md-end">
-                                    <button class="button-cancelar" id="btnCancelar" role="button">CANCELAR</button>
-                                    <button class="button-aceptar" id="btnAceptar" type="submit"
-                                        role="button">ACEPTAR</button>
-                                </div>
+                                <h3 class="mt-3" style="color: antiquewhite;">Carrito de Compras</h3>
+                                <div id="carrito" style="color: antiquewhite;"></div>
                             </div>
                         </div>
                     </div>
@@ -95,116 +72,154 @@
             </div>
         </div>
     </div>
-      
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-</body>
-
-<!-- SCRIPT -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
-
-
-    <script type="text/javascript">
-        // fetch == curl
-        const cboCliente = document.getElementById('cboCliente');
-        const listaClientes = fetch("http://localhost:5000/api/cliente", {
-            headers: {
-                "Content-Type": "application/json",
-                "Access-Control-Allow-Origin": "*",
-            },
-            mode: 'cors'
-        });
-        const cboProducto = document.getElementById('cboProducto');
-        const listaProductos = fetch("http://localhost:5000/api/producto", {
-            headers: {
-                "Content-Type": "application/json",
-                "Access-Control-Allow-Origin": "*",
-            },
-            mode: 'cors'
-        });
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     
+    <!-- codigo js-->
+    <script type="text/javascript">
+        const cboCliente = document.getElementById('cboCliente');
+        const cboProducto = document.getElementById('cboProducto');
+        const cboDespacho = document.getElementById('cboDespacho');
+        let carrito = [];
+        let productos = [];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchClientes();
+            fetchProductos();
+        });
+
+        const fetchClientes = async () => {
+            try {
+                const response = await fetch("http://localhost:5000/api/cliente", {
+                    headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" },
+                    mode: 'cors'
+                });
+                const clientes = await response.json();
+                let options = clientes.filter(cliente => cliente.activo).map(cliente => `<option value="${cliente.id}">${cliente.razonSocial}</option>`).join('');
+                cboCliente.innerHTML = options;
+            } catch (error) {
+                alert(`Error fetching clients: ${error.message}`);
+            }
+        };
+
+        const fetchProductos = async () => {
+            try {
+                const response = await fetch("http://localhost:5000/api/producto", {
+                    headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" },
+                    mode: 'cors'
+                });
+                productos = await response.json();
+                let options = productos.filter(producto => producto.enStock).map(producto => `<option value="${producto.id}" data-precio="${producto.precio}">${producto.nombre}</option>`).join('');
+                cboProducto.innerHTML = options;
+            } catch (error) {
+                alert(`Error fetching products: ${error.message}`);
+            }
+        };
+
         function seleccionarCliente() {
             cboCliente.disabled = true;
             document.getElementById('producto-section').style.display = 'block';
         }
-    
-        listaClientes.then(async function (e) {
-            await e.json().then(async function (objeto) {
-                let itemsStr = "";
-                objeto.filter(cliente => cliente.activo).forEach(element => {
-                    console.log({ element });
-                    itemsStr += "<option value='" + element.id + "'>" + element.razonSocial + "</option>";
-                });
-                cboCliente.innerHTML = itemsStr;
-            });
-        });
-    
-        listaProductos.then(async function (e) {
-            await e.json().then(async function (objeto) {
-                let itemsStr = "";
-                objeto.filter(producto => producto.enStock).forEach(element => {
-                    console.log({ element });
-                    itemsStr += "<option value='" + element.id + "'>" + element.nombre + "</option>";
-                });
-                cboProducto.innerHTML = itemsStr;
-            });
-        }).catch(function (error) {
-            alert(error.message);
-        }).finally(() => {
-            console.log("Termino el proceso del fetch a clientes");
-        });
-    
-    
-        function clickEnviar(e) {
+
+        function updateCartUI() {
+            const carritoDiv = document.getElementById('carrito');
+            carritoDiv.innerHTML = carrito.map((item, index) => {
+                const totalPrecio = item.cantidad * item.precio;
+                return `
+                <div class="cart-item">
+                    <p>Producto: ${item.nombre} - Cantidad: ${item.cantidad} - Precio: ${item.precio} - Total: ${totalPrecio}</p>
+                    <button class="btn btn-danger btn-sm" onclick="removeFromCart(${index})">Eliminar</button>
+                </div>
+                `;
+            }).join('');
+        }
+
+        function removeFromCart(index) {
+            carrito.splice(index, 1);
+            updateCartUI();
+        }
+
+        document.getElementById('btnAgregar').addEventListener('click', (e) => {
             e.preventDefault();
-            const idCliente = document.getElementById("cboCliente").value;
-            const idProducto = document.getElementById("cboProducto").value;
+            const idProducto = cboProducto.value;
             const cantidad = document.getElementById("txtCantidad").value;
-            setTimeout(function() {
-                window.location.href = "../index.html";
-            }, 3000);
-    
-            const objEnvio = {
-                "id_cliente": idCliente,
-                "id_producto": idProducto,
-                "cantidad": cantidad
-            };
-            console.log({ objEnvio });
-    
-            // envio a factura - API FLASK
-            fetch("http://localhost:5001/api/boleta", {
-                headers: {
-                    "Content-Type": "application/json",
-                    "Access-Control-Allow-Origin": "*",
-                },
-                mode: 'cors',
-                method: 'POST',
-                body: JSON.stringify(objEnvio)
-            }).then(async function (e) {
-                await e.json().then((obj) => { console.log({ obj }) });
-                // Habilitar cboCliente y deshabilitar los otros elementos después de enviar la solicitud
-                cboCliente.disabled = false;
-                document.getElementById("producto-section").disabled = true;
-            }).catch(function (error) { alert(error.message) })
-                .finally(function () {
+            const nombre = cboProducto.options[cboProducto.selectedIndex].text;
+            const precio = parseFloat(cboProducto.options[cboProducto.selectedIndex].getAttribute('data-precio'));
+
+            if (cantidad < 1) {
+                alert("Cantidad debe ser mayor a 0");
+                return;
+            }
+
+            const producto = { id: idProducto, nombre, cantidad, precio };
+            carrito.push(producto);
+
+            if (cboDespacho.value === 'con') {
+                const despacho = { id: 'despacho', nombre: 'Despacho', cantidad: 1, precio: 5000 };
+                carrito = carrito.filter(item => item.id !== 'despacho'); // Remove existing despacho item if any
+                carrito.push(despacho);
+            } else {
+                carrito = carrito.filter(item => item.id !== 'despacho'); // Remove despacho item if switching to sin despacho
+            }
+
+            updateCartUI();
+        });
+
+        document.getElementById('btnFinalizar').addEventListener('click', async (e) => {
+            e.preventDefault();
+            const idCliente = cboCliente.value;
+            const objEnvio = { id_cliente: idCliente, productos: carrito };
+
+            try {
+                const response = await fetch("http://localhost:5001/api/boleta", {
+                    headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" },
+                    mode: 'cors',
+                    method: 'POST',
+                    body: JSON.stringify(objEnvio)
+                });
+
+                if (response.status === 201) {
+                    const result = await response.json();
+                    console.log({ result });
+                    carrito = [];
+                    updateCartUI();
                     Swal.fire({
                         position: "top-end",
                         icon: "success",
-                        title: "Producto agregado con éxito al carrito!",
+                        title: "Compra realizada con éxito!",
                         showConfirmButton: false,
                         timer: 1500
+                    }).then(() => {
+                        window.location.href = 'logistica.html'; // Redirección a la página de confirmación
                     });
+                } else {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "error",
+                        title: `Error al realizar la compra. Código de estado: ${response.status}`,
+                        showConfirmButton: true,
+                    });
+                }
+            } catch (error) {
+                Swal.fire({
+                    position: "top-end",
+                    icon: "error",
+                    title: `Error: ${error.message}`,
+                    showConfirmButton: false,
+                    timer: 1500
                 });
-    
-        }
-    
-        const btnAceptar = document.getElementById('btnAceptar');
-        btnAceptar.addEventListener("click", clickEnviar);
+            }
+        });
+
+        document.getElementById('btnCancelar').addEventListener('click', (e) => {
+            e.preventDefault();
+            carrito = [];
+            updateCartUI();
+            cboCliente.disabled = false;
+            document.getElementById('producto-section').style.display = 'none';
+        });
     </script>
+</body>
+</html>
