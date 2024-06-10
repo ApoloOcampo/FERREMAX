@@ -40,10 +40,9 @@ Página WEB
 - y ejecutar con live server
 
 
------------POST de prueba-----------
+          POST de prueba
 
-http://localhost:5000/api/cliente
-------------------------------------
+"http://localhost:5000/api/cliente"
 {
     "id":1,
     "razonSocial":"persona1",
@@ -53,7 +52,7 @@ http://localhost:5000/api/cliente
     "email":"persona1@gmail.com",
     "activo":true
 }
-------------------------------------
+
 {
     "id":2,
     "razonSocial":"persona2",
@@ -63,7 +62,7 @@ http://localhost:5000/api/cliente
     "email":"persona2@gmail.com",
     "activo":true
 }
-------------------------------------
+
 {
     "id":3,
     "razonSocial":"persona3",
@@ -73,7 +72,7 @@ http://localhost:5000/api/cliente
     "email":"persona3@gmail.com",
     "activo":false
 }
-------------------------------------
+
 {
     "id":4,
     "razonSocial":"persona4",
@@ -83,11 +82,10 @@ http://localhost:5000/api/cliente
     "email":"persona4@gmail.com",
     "activo":true
 }
-------------------------------------
-------------------------------------
+
 
 http://localhost:5000/api/producto
-------------------------------------
+
 {
     "id":1,
     "nombre":"producto 1",
@@ -95,7 +93,7 @@ http://localhost:5000/api/producto
     "precio":1000,
     "enStock": true
 }
-------------------------------------
+
 {
     "id":2,
     "nombre":"producto 2",
@@ -103,7 +101,7 @@ http://localhost:5000/api/producto
     "precio":2000,
     "enStock": false
 }
-------------------------------------
+
 {
     "id":3,
     "nombre":"producto 3",
@@ -111,7 +109,7 @@ http://localhost:5000/api/producto
     "precio":3000,
     "enStock": true
 }
-------------------------------------
+
 {
     "id":4,
     "nombre":"producto 4",
@@ -119,29 +117,26 @@ http://localhost:5000/api/producto
     "precio":4000,
     "enStock": true
 }
-------------------------------------
-------------------------------------
+
 
 http://localhost:5002/api/despacho
-----------------------------
+
 {
     "id": 1,
     "tipo": "en preparación"
 }
-----------------------------
+
 {
     "id": 2,
     "tipo": "en despacho"
 }
-----------------------------
+
 {
     "id": 3,
     "tipo": "entregado"
 }
-----------------------------
+
 {
     "id": 4,
     "tipo": "entregado"
 }
-----------------------------
-----------------------------
