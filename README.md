@@ -40,9 +40,9 @@ Página WEB
 - y ejecutar con live server
 
 
-          POST de prueba
+## POST de prueba
 
-"http://localhost:5000/api/cliente"
+http://localhost:5000/api/cliente
 
     {
       "id":1,
